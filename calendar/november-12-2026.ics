@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IAHSS Central Florida Chapter//Events 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:november-12-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20261112T120000Z
+DTEND:20261112T220000Z
+SUMMARY:2026 Joint IAHSS Florida Chapter Fall Summit
+LOCATION:Embassy Suites Tampa Downtown, 513 S Florida Ave, Tampa, FL 33602
+DESCRIPTION:Second Annual Joint IAHSS Florida Chapter Summit.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+END:VCALENDAR

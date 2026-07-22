@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IAHSS Central Florida Chapter//Events 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:june-11-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20260611T153000Z
+DTEND:20260611T170000Z
+SUMMARY:Beyond Compliance: Emergency Management Program Assessment
+LOCATION:Microsoft Teams
+DESCRIPTION:IAHSS Central Florida virtual webinar with Gloria Graham, CPP, CHPA.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+END:VCALENDAR
