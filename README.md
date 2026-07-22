@@ -1,13 +1,37 @@
 # IAHSS Central Florida Chapter Website
 
-## Current release
-Version 2.0 — July 2026
+This folder is the master copy of the static website published through GitHub Pages.
 
-## Upload instructions
-Upload the contents of this folder to the repository root and replace files when prompted. GitHub Pages deploys automatically after the commit.
+## Website structure
 
-## Included pages
-Home, Events, individual event pages, News, Awards, Resources, Leadership, Gallery, Contact and Sponsors.
+```text
+IAHSS_CFC_Website_Master/
+├── index.html
+├── events.html
+├── event-august-2026.html
+├── event-fall-summit-2026.html
+├── event-holiday-2026.html
+├── event-june-2026.html
+├── sponsors.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── site.js
+│   ├── images/
+│   └── calendar/
+├── README.md
+└── GITHUB-UPDATE-GUIDE.md
+```
 
-## Maintenance workflow
-Do not edit individual files unless necessary. Keep this package as the master copy and replace the repository contents with each approved release.
+## Important rules
+
+1. Keep the folder names and capitalization exactly as shown.
+2. Upload the contents of this folder to the root of the GitHub repository, not the outer folder itself.
+3. When replacing an image, use the same filename whenever possible so the HTML does not need to change.
+4. GitHub Pages filenames are case-sensitive.
+5. The homepage event image is `assets/images/Brandon_Hosp.jpg`.
+
+## Current master version
+
+Prepared July 22, 2026. This version includes the homepage, sponsors page, events calendar, four event pages, downloadable calendar files, Minuteman website-sponsor recognition, sponsor links that open in a new tab, and a return-to-site link on the sponsors page.
