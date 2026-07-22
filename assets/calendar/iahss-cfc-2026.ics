@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IAHSS Central Florida Chapter//Events 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:june-11-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20260611T153000Z
+DTEND:20260611T170000Z
+SUMMARY:Beyond Compliance: Emergency Management Program Assessment
+LOCATION:Microsoft Teams
+DESCRIPTION:IAHSS Central Florida virtual webinar with Gloria Graham, CPP, CHPA.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+BEGIN:VEVENT
+UID:august-18-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20260818T153000Z
+DTEND:20260818T170000Z
+SUMMARY:IAHSS Central Florida August Meeting - Axon MetaCoach
+LOCATION:Brandon Regional Hospital, 119 Oakfield Drive, Brandon, FL 33511
+DESCRIPTION:AI-powered immersive training. Lunch provided by Axon.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+BEGIN:VEVENT
+UID:november-12-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20261112T120000Z
+DTEND:20261112T220000Z
+SUMMARY:2026 Joint IAHSS Florida Chapter Fall Summit
+LOCATION:Embassy Suites Tampa Downtown, 513 S Florida Ave, Tampa, FL 33602
+DESCRIPTION:Second Annual Joint IAHSS Florida Chapter Summit.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+BEGIN:VEVENT
+UID:december-4-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20261204T163000Z
+DTEND:20261204T190000Z
+SUMMARY:18th Annual IAHSS Central Florida Holiday Party and Luncheon
+LOCATION:Columbia Restaurant, 2117 E 7th Ave, Tampa, FL 33605
+DESCRIPTION:Annual chapter holiday party and luncheon.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+END:VCALENDAR

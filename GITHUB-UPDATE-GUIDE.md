@@ -1,46 +1,43 @@
+# Manual GitHub Update Guide
 
-# Updating the IAHSS Central Florida website manually
+Repository: `https://github.com/iahsscfc/iahss-central-florida`
 
-## Fastest method: upload files in your browser
-1. Sign in to GitHub and open `iahsscfc/iahss-central-florida`.
-2. Click **Add file** → **Upload files**.
-3. Drag the **contents** of this website folder into the upload area. Do not upload the outer folder itself.
-4. Wait for every file to finish uploading.
-5. In **Commit changes**, enter a short note such as `Add event calendar and event pages`.
-6. Select **Commit directly to the main branch** and click **Commit changes**.
-7. Wait about 1–3 minutes, then refresh the live site with Ctrl+F5.
+## Replace the entire website safely
 
-## Safest method for changing one file
-1. Open the file in the GitHub repository, such as `index.html`.
-2. Click the pencil icon (**Edit this file**).
-3. Make or paste the change.
-4. Click **Commit changes**.
-5. Add a clear commit message and commit to `main`.
+1. Download and extract the master ZIP.
+2. Open the extracted `IAHSS_CFC_Website_Master` folder.
+3. In GitHub, open the repository and confirm the branch is `main`.
+4. Select **Add file → Upload files**.
+5. Drag the files and folders from inside the master folder into the upload area.
+6. Allow GitHub to replace files with the same names.
+7. Use a commit message such as `Update website from master package`.
+8. Select **Commit directly to the main branch** and commit.
+9. Open the repository's **Actions** tab and wait for the Pages deployment to show a green checkmark.
+10. Open the live website and press `Ctrl+F5` to bypass cached files.
 
-## Updating an image or logo
-1. Keep the same filename whenever possible.
-2. Open `assets/images` in GitHub.
-3. Click **Add file** → **Upload files**.
-4. Upload the replacement image and confirm **Replace** when prompted.
-5. Commit the change. No HTML edit is needed when the filename stays the same.
+## Update only one page
 
-## Adding a new event
-1. Duplicate the most similar `event-*.html` file.
-2. Rename the copy using lowercase words separated by hyphens, for example `event-march-2027.html`.
-3. Edit the title, date, time, location, description, highlights, registration link and calendar link.
-4. Add a matching event card to `events.html`.
-5. Add the event to the homepage only when it should appear in the homepage event list.
-6. Create an `.ics` file in the `calendar` folder by copying an existing one and changing its dates and text.
-7. Commit all related files together.
+Upload the replacement HTML file to the repository root. For example, upload `sponsors.html` directly beside `index.html`.
 
-## Avoiding broken links
-- File and folder names are case-sensitive on GitHub Pages.
-- Use relative links such as `events.html` and `assets/images/logo.png`.
-- Do not use Windows paths such as `C:\Users\...`.
-- Keep all site files on the `main` branch unless Pages is configured differently.
+## Replace a picture or logo
 
-## Recommended routine before uploading
-- Open `index.html`, `events.html`, `sponsors.html` and each new event page locally.
-- Click every important button.
-- Check the site at both desktop and phone widths.
-- Compress large JPG/PNG files before upload. Large photos are the main cause of slow uploads and unnecessary bandwidth.
+1. Open `assets/images` in GitHub.
+2. Select **Add file → Upload files**.
+3. Upload the replacement using the exact same filename and capitalization.
+4. Commit the change.
+
+## Add a future event
+
+1. Copy the closest existing `event-*.html` page and rename it.
+2. Update the title, date, location, description, registration link, and calendar link.
+3. Add a matching event card to `events.html`.
+4. Add or update the featured event on `index.html` when appropriate.
+5. Add an `.ics` calendar file under `assets/calendar`.
+6. Upload and commit all related files together.
+
+## Troubleshooting
+
+- Wrong or old image: wait for the GitHub Pages deployment, then press `Ctrl+F5`.
+- Broken layout: verify each page points to `assets/css/styles.css`.
+- Menu not working: verify each page points to `assets/js/site.js`.
+- Missing image: verify the filename, extension, and capitalization exactly match the HTML.

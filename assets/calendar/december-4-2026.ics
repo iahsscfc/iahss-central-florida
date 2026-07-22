@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IAHSS Central Florida Chapter//Events 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:december-4-2026.ics@iahss-cfc.org
+DTSTAMP:20260722T120000Z
+DTSTART:20261204T163000Z
+DTEND:20261204T190000Z
+SUMMARY:18th Annual IAHSS Central Florida Holiday Party and Luncheon
+LOCATION:Columbia Restaurant, 2117 E 7th Ave, Tampa, FL 33605
+DESCRIPTION:Annual chapter holiday party and luncheon.
+URL:https://iahsscfc.github.io/iahss-central-florida/events.html
+END:VEVENT
+END:VCALENDAR
