@@ -1,0 +1,2 @@
+IAHSS CENTRAL FLORIDA WEBSITE — VERSION 2.0
+Upload ALL contents of this folder to the ROOT of the GitHub repository. Replace existing files. Do not upload the outer folder itself.
