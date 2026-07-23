@@ -30,8 +30,13 @@ IAHSS_CFC_Website_Master/
 2. Upload the contents of this folder to the root of the GitHub repository, not the outer folder itself.
 3. When replacing an image, use the same filename whenever possible so the HTML does not need to change.
 4. GitHub Pages filenames are case-sensitive.
-5. The homepage event image is `assets/images/Brandon_Hosp.jpg`.
+5. The homepage event image is `assets/images/hospitals/Brandon_Hosp.jpg`.
 
 ## Current master version
 
 Prepared July 22, 2026. This version includes the homepage, sponsors page, events calendar, four event pages, downloadable calendar files, Minuteman website-sponsor recognition, sponsor links that open in a new tab, and a return-to-site link on the sponsors page.
+
+
+## Hospital images and forms
+- Local hospital photography is stored in `assets/images/hospitals/`.
+- The Holiday Luncheon award form is stored in `assets/forms/IAHSS_CFC_AWARD_NOMINATION_FORM.docx`.
