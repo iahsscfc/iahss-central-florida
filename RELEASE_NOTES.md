@@ -16,3 +16,11 @@
 
 ## Source-file note
 `Tampa_general_Hospital.jpg` was not present in the supplied Version 1.1 ZIP, so it could not be moved in this release. Add it to `assets/images/hospitals/` when available.
+
+## Version 1.4
+- Added four BayCare facilities to the Member Hospitals section on the home page:
+  - BayCare Hospital Wesley Chapel
+  - BayCare Mease Countryside Hospital
+  - BayCare Morton Plant Hospital
+  - BayCare St. Joseph's Hospital-South
+- Image references use the files already stored in `assets/images/hospitals/`.
