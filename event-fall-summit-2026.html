@@ -56,4 +56,18 @@
 </main>
 <footer class="site-footer"><div class="container footer-grid"><div><img src="assets/images/iahss-cfc-logo.png" alt="IAHSS Central Florida Chapter"><p>International Association for Healthcare Security and Safety<br>Central Florida Chapter</p></div><div><h3>Contact</h3><a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a><a href="tel:+19415311073">(941) 531-1073</a><span>West Central Florida</span></div><div><h3>Quick links</h3><a href="events.html">Events</a><a href="index.html#awards">Awards</a><a href="index.html#resources">Resources</a><a href="index.html#leadership">Leadership</a></div><div><h3>National IAHSS</h3><p>Visit the International Association for Healthcare Security &amp; Safety.</p><a class="footer-button" href="https://www.iahss.org" target="_blank" rel="noopener">IAHSS.org</a></div></div><div class="container copyright">© 2026 IAHSS Central Florida Chapter. All rights reserved.</div></footer>
 <script src="assets/js/site.js"></script>
+<script>
+(function () {
+  var counter = document.getElementById('summit-days');
+  if (!counter) return;
+
+  // Use noon Eastern time to avoid daylight-saving and midnight rounding errors.
+  var eventDate = new Date('2026-11-12T12:00:00-05:00');
+  var now = new Date();
+  var millisecondsPerDay = 24 * 60 * 60 * 1000;
+  var daysRemaining = Math.ceil((eventDate.getTime() - now.getTime()) / millisecondsPerDay);
+
+  counter.textContent = String(Math.max(0, daysRemaining));
+})();
+</script>
 </body></html>
