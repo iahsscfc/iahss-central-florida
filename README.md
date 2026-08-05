@@ -40,3 +40,5 @@ Prepared July 22, 2026. This version includes the homepage, sponsors page, event
 ## Hospital images and forms
 - Local hospital photography is stored in `assets/images/hospitals/`.
 - The Holiday Luncheon award form is stored in `assets/forms/IAHSS_CFC_AWARD_NOMINATION_FORM.docx`.
+
+Production site migrated to GitHub Pages on August 5, 2026.
