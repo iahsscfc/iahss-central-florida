@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit an IAHSS Central Florida Chapter award nomination online or download the traditional Word nomination form.">
+  <title>2026 Award Nomination | IAHSS Central Florida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/award-nomination.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="IAHSS Central Florida home"><img src="assets/images/iahss-cfc-logo.png" alt="IAHSS Central Florida Chapter"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="events.html">Events</a><a class="active" href="index.html#awards">Awards</a><a href="index.html#resources">Resources</a><a href="index.html#leadership">Leadership</a><a href="sponsors.html">Sponsors</a>
+      </nav>
+      <a class="button button-small" href="https://www.iahss.org/page/membership" target="_blank" rel="noopener">Join IAHSS</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero nomination-hero">
+      <div class="container reveal">
+        <p class="eyebrow light">Recognition</p>
+        <h1>2026 Award Nomination</h1>
+        <p>Submit a nomination online or download the traditional form. Online submissions are routed to the award review team and archived for review.</p>
+      </div>
+    </section>
+
+    <section class="container nomination-layout section-pad">
+      <article class="nomination-card reveal">
+        <div class="nomination-intro">
+          <div>
+            <p class="eyebrow">Online nomination</p>
+            <h2>IAHSS Central Florida Award Nomination Form</h2>
+            <p>Complete all required fields and provide a narrative of at least 200 words. Nominations must be received by <strong>November 1, 2026</strong>.</p>
+          </div>
+          <a class="button button-outline legacy-button" href="assets/forms/IAHSS_CFC_AWARD_NOMINATION_FORM.docx" download>Download Word form</a>
+        </div>
+
+        <div class="form-notice" role="note">
+          <strong>Prefer paper or email?</strong>
+          Download the Word form, complete it, and email it with the narrative to <a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a>.
+        </div>
+
+        <form id="awardNominationForm" class="award-form" method="post" action="https://script.google.com/macros/s/AKfycbxsw-oB0TQjzoMaUAa-ltko5DIaVvcqr7QTCxda8u6l9_iXZN6FulHW-uIjnudC3wnhiw/exec" target="submission-frame" novalidate>
+          <input type="hidden" name="formVersion" value="2026-1">
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset>
+            <legend>1. Award category</legend>
+            <p class="field-help">Select one award category.</p>
+            <div class="option-grid award-grid">
+              <label><input type="radio" name="awardCategory" value="Security Officer of the Year" required><span>Security Officer of the Year</span></label>
+              <label><input type="radio" name="awardCategory" value="Dispatcher of the Year"><span>Dispatcher of the Year</span></label>
+              <label><input type="radio" name="awardCategory" value="Merit Award"><span>Merit Award</span></label>
+              <label><input type="radio" name="awardCategory" value="Excellence Award"><span>Excellence Award</span></label>
+              <label><input type="radio" name="awardCategory" value="Valor Award"><span>Valor Award</span></label>
+              <label><input type="radio" name="awardCategory" value="Distinction Award"><span>Distinction Award</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Nominee information</legend>
+            <div class="field-grid two-column">
+              <label class="field full"><span>Nominee's full name *</span><input type="text" name="nomineeName" required autocomplete="name"></label>
+              <label class="field"><span>Title *</span><input type="text" name="nomineeTitle" required></label>
+              <label class="field"><span>Company / organization *</span><input type="text" name="nomineeOrganization" required autocomplete="organization"></label>
+              <label class="field full"><span>Address</span><input type="text" name="nomineeAddress" autocomplete="street-address"></label>
+              <label class="field"><span>City, state and ZIP</span><input type="text" name="nomineeCityStateZip"></label>
+              <label class="field"><span>Phone</span><input type="tel" name="nomineePhone" autocomplete="tel"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. IAHSS certification</legend>
+            <div class="option-grid compact-options">
+              <label><input type="radio" name="certificationStatus" value="Certification achieved"><span>Certification achieved</span></label>
+              <label><input type="radio" name="certificationStatus" value="Studying for certification"><span>Studying for</span></label>
+              <label><input type="radio" name="certificationStatus" value="Not applicable"><span>Not applicable</span></label>
+            </div>
+            <p class="field-label">Certification level(s)</p>
+            <div class="option-grid certification-grid">
+              <label><input type="checkbox" name="certificationLevels" value="Basic"><span>Basic</span></label>
+              <label><input type="checkbox" name="certificationLevels" value="Advanced"><span>Advanced</span></label>
+              <label><input type="checkbox" name="certificationLevels" value="Supervisory"><span>Supervisory</span></label>
+              <label><input type="checkbox" name="certificationLevels" value="CHPA"><span>CHPA</span></label>
+            </div>
+            <label class="field full"><span>Certification number, if applicable</span><input type="text" name="certificationNumber"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Sponsoring IAHSS member</legend>
+            <p class="attestation">By submitting this nomination, I confirm that I reviewed the nomination and believe the statements are accurate and faithfully reflect the nominee's security and safety activities for the Association, an employer and the community.</p>
+            <div class="field-grid two-column">
+              <label class="field"><span>Sponsoring member's full name *</span><input type="text" name="sponsorName" required autocomplete="name"></label>
+              <label class="field"><span>IAHSS member ID *</span><input type="text" name="sponsorMemberId" required></label>
+              <label class="field"><span>Email address *</span><input type="email" name="sponsorEmail" required autocomplete="email"></label>
+              <label class="field"><span>Phone</span><input type="tel" name="sponsorPhone" autocomplete="tel"></label>
+              <label class="field"><span>Date *</span><input type="date" name="submissionDate" required></label>
+              <label class="attest-check"><input type="checkbox" name="attestation" value="Confirmed" required><span>I confirm the attestation above. *</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>5. Nomination narrative</legend>
+            <p class="field-help">In at least 200 words, describe the nominee's qualifications according to the award criteria and explain why the nominee should receive the award.</p>
+            <label class="field full"><span>Narrative *</span><textarea name="narrative" id="narrative" rows="14" minlength="1000" required aria-describedby="word-count"></textarea></label>
+            <div id="word-count" class="word-count" aria-live="polite"><strong>0</strong> words - minimum 200</div>
+            <label class="field full"><span>Optional supporting document</span><input type="url" name="supportingDocumentLink" placeholder="Paste a SharePoint, OneDrive, Google Drive or other share link"></label>
+            <p class="field-help">For privacy and reliability, upload supporting material to your organization's approved file-sharing service and paste a viewable link above.</p>
+          </fieldset>
+
+          <div class="submit-area">
+            <button class="button" type="submit" id="submitButton">Submit nomination</button>
+            <p>After submission, the award review team receives the nomination and a printable PDF. A confirmation is also sent to the sponsoring member.</p>
+          </div>
+        </form>
+
+        <div id="submissionStatus" class="submission-status" hidden tabindex="-1">
+          <h2>Nomination submitted</h2>
+          <p>Thank you. The award review team has been notified. A confirmation should arrive at the sponsoring member's email address.</p>
+          <a class="button button-outline" href="index.html">Return to home</a>
+        </div>
+        <iframe name="submission-frame" id="submission-frame" title="Submission response" hidden></iframe>
+      </article>
+
+      <aside class="nomination-side reveal">
+        <p class="eyebrow">Award criteria</p>
+        <h2>Choose the best category</h2>
+        <div class="criteria-list">
+          <section><h3>Merit Award</h3><p>Personal fortitude above and beyond the call of duty, without risking the nominee's own life.</p></section>
+          <section><h3>Excellence Award</h3><p>An outstanding healthcare security or safety program, regular act or duty.</p></section>
+          <section><h3>Valor Award</h3><p>A selfless or courageous act performed with full awareness of danger and risk to the nominee's own life.</p></section>
+          <section><h3>Distinction Award</h3><p>A significant and lasting contribution to IAHSS or the healthcare security profession.</p></section>
+          <section><h3>Security Officer / Dispatcher of the Year</h3><p>A lasting contribution, consistent performance above and beyond duty, and exemplary service to the nominee's agency.</p></section>
+        </div>
+        <hr>
+        <h2>Questions?</h2>
+        <p>Contact the chapter at <a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a>.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><img src="assets/images/iahss-cfc-logo.png" alt="IAHSS Central Florida Chapter"><p>International Association for Healthcare Security and Safety<br>Central Florida Chapter</p></div><div><h3>Contact</h3><a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a><a href="tel:+19415311073">(941) 531-1073</a><span>West Central Florida</span></div><div><h3>Quick links</h3><a href="events.html">Events</a><a href="index.html#awards">Awards</a><a href="index.html#resources">Resources</a><a href="index.html#leadership">Leadership</a></div><div><h3>National IAHSS</h3><p>Visit the International Association for Healthcare Security &amp; Safety.</p><a class="footer-button" href="https://www.iahss.org" target="_blank" rel="noopener">IAHSS.org</a></div></div><div class="container copyright">© 2026 IAHSS Central Florida Chapter. All rights reserved.</div></footer>
+
+  <script src="assets/js/site.js"></script>
+  <script>
+    (() => {
+      const form = document.getElementById('awardNominationForm');
+      const narrative = document.getElementById('narrative');
+      const count = document.querySelector('#word-count strong');
+      const status = document.getElementById('submissionStatus');
+      const frame = document.getElementById('submission-frame');
+      const submitButton = document.getElementById('submitButton');
+      let submitted = false;
+
+      const wordCount = () => {
+        const words = narrative.value.trim().match(/\b[\w'-]+\b/g) || [];
+        count.textContent = words.length;
+        document.getElementById('word-count').classList.toggle('valid', words.length >= 200);
+        return words.length;
+      };
+
+      narrative.addEventListener('input', wordCount);
+      form.submissionDate.valueAsDate = new Date();
+
+      form.addEventListener('submit', (event) => {
+        if (form.action.includes('REPLACE_WITH_')) {
+          event.preventDefault();
+          alert('The online form is not connected yet. Complete the Google Apps Script setup guide and replace the form action URL before publishing.');
+          return;
+        }
+        if (!form.reportValidity()) {
+          event.preventDefault();
+          return;
+        }
+        if (wordCount() < 200) {
+          event.preventDefault();
+          narrative.setCustomValidity('Please enter a narrative of at least 200 words.');
+          narrative.reportValidity();
+          narrative.addEventListener('input', () => narrative.setCustomValidity(''), { once: true });
+          return;
+        }
+        submitted = true;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+      });
+
+      frame.addEventListener('load', () => {
+        if (!submitted) return;
+        form.hidden = true;
+        status.hidden = false;
+        status.focus();
+      });
+    })();
+  </script>
+</body>
+</html>
