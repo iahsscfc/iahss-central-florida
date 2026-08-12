@@ -37,3 +37,5 @@ This file is maintained for internal website record keeping. It is stored in the
 - `assets/images/iahss-cfc-logo.png`
 - `assets/images/chapter-coin-design-2026.png`
 - `.github/WEBSITE-CHANGELOG.md`
+
+- Diamond sponsor card restored to its original dimensions; Motorola Solutions logo enlarged within the original card footprint.
