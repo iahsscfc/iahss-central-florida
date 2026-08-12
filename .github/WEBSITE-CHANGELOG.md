@@ -2,6 +2,20 @@
 
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
 
+## 2026-08-12 — Sponsor Roster and Diamond Sponsor Emphasis
+
+### Added
+- Added CoSecure to the Gold Sponsor tier.
+- Added Securitas Healthcare to the Gold Sponsor tier.
+- Added Security 101 to the Gold Sponsor tier.
+
+### Changed
+- Increased the Diamond Sponsor card and logo presentation so Diamond-level sponsorship is visually more prominent than lower tiers.
+
+### Files in this update
+- `sponsors.html`
+- `.github/WEBSITE-CHANGELOG.md`
+
 ## 2026-08-12 — Events, Sponsors, Branding, Holiday RSVP, Chapter Gear
 
 ### Changed
