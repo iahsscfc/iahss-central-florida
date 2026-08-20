@@ -2,6 +2,26 @@
 
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
 
+## 2026-08-20 — August Axon MetaCoach Recap & Event Reordering
+
+### Added
+- Post-event recap, photos and resource links on the August 18 Axon MetaCoach meeting page (shared with Axon permission).
+- Four web-optimized meeting photos under `assets/images/events/august-2026/`.
+- Axon MetaCoach Healthcare deck PDF under `assets/documents/`.
+
+### Changed
+- Marked the August 18 meeting as Completed.
+- Made the Second Annual IAHSS Florida Summit (Nov 12) the featured / next event on the homepage and Events page.
+- Moved the completed August meeting under the completed events section (with the June meeting).
+
+### Files in this update
+- `index.html`
+- `events.html`
+- `event-august-2026.html`
+- `assets/images/events/august-2026/*`
+- `assets/documents/Axon_MetaCoach_Healthcare_Deck.pdf`
+- `.github/WEBSITE-CHANGELOG.md`
+
 ## 2026-08-12 — Sponsor Roster and Diamond Sponsor Emphasis
 
 ### Added
