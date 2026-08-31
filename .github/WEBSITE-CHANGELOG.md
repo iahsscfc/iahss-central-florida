@@ -2,6 +2,15 @@
 
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
 
+## 2026-08-31 — Add CriticalArc as Silver Sponsor
+
+### Added
+- CriticalArc to the Silver Sponsor tier ($750 level).
+
+### Files in this update
+- `sponsors.html`
+- `.github/WEBSITE-CHANGELOG.md`
+
 ## 2026-08-20 — August Axon MetaCoach Recap & Event Reordering
 
 ### Added
