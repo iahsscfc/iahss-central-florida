@@ -2,10 +2,13 @@
 
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
 
-## 2026-08-31 — Add CriticalArc as Silver Sponsor
+## 2026-08-31 — Add CriticalArc as Silver Sponsor + Enlarge Motorola Logo
 
 ### Added
 - CriticalArc to the Silver Sponsor tier ($750 level).
+
+### Changed
+- Enlarged the Motorola Solutions (Diamond) logo within the existing Diamond card footprint.
 
 ### Files in this update
 - `sponsors.html`
