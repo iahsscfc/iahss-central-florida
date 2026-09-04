@@ -28,3 +28,6 @@ The hospital-image files above are byte-for-byte duplicates of the retained copi
 ## Deferred infrastructure cleanup
 - Retained `CNAME` and `.nojekyll` pending separate verification of Cloudflare custom-domain routing and any remaining GitHub Pages configuration.
 - Bare-domain routing (`iahss-cfc.org` to `www.iahss-cfc.org`) should be verified in Cloudflare/GoDaddy before changing DNS-related repository files.
+
+## Sponsor logo correction
+- Corrected the ASSA ABLOY Platinum sponsor card to use the chapter-provided official logo asset (`assets/images/sponsors/assa-abloy-logo.jpg`) instead of the automatic domain favicon.
