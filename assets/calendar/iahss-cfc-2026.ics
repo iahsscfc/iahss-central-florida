@@ -24,6 +24,16 @@ DESCRIPTION:AI-powered immersive training. Lunch provided by Axon.
 URL:https://iahsscfc.github.io/iahss-central-florida/events.html
 END:VEVENT
 BEGIN:VEVENT
+UID:september-24-2026-fbi-cisa@iahss-cfc.org
+DTSTAMP:20260914T190000Z
+DTSTART:20260924T120000Z
+DTEND:20260924T200000Z
+SUMMARY:FBI/CISA Tampa Bay Region Healthcare Security Workshop
+LOCATION:Tampa General Hospital - USF People Development Institute (PDI), PDI-124 Auditorium, Tampa, FL
+DESCRIPTION:Regional healthcare security workshop presented by FBI and CISA.
+URL:https://events.gcc.teams.microsoft.com/event/023bdba2-5d40-4c05-9281-16f1c48fed90@69c613d2-b051-4234-8ed1-fd530b70d5d3/registration
+END:VEVENT
+BEGIN:VEVENT
 UID:november-12-2026.ics@iahss-cfc.org
 DTSTAMP:20260722T120000Z
 DTSTART:20261112T120000Z

@@ -1,3 +1,23 @@
+
+## 2026-09-14 — FBI/CISA Tampa Bay Healthcare Security Workshop
+
+### Added
+- Added the September 24 FBI/CISA Tampa Bay Region Healthcare Security Workshop as the next regional event.
+- Added a dedicated event page with supplied FBI/CISA workshop artwork, event details, official Microsoft registration link and calendar download.
+- Added the workshop to the downloadable 2026 chapter calendar.
+
+### Changed
+- Updated the homepage featured event and event listings so the September 24 workshop appears before the November Florida Summit.
+
+### Files in this update
+- `index.html`
+- `events.html`
+- `event-fbi-cisa-workshop-2026.html`
+- `assets/images/events/september-2026/fbi-cisa-healthcare-security-workshop.png`
+- `assets/calendar/september-24-2026.ics`
+- `assets/calendar/iahss-cfc-2026.ics`
+- `.github/WEBSITE-CHANGELOG.md`
+
 # IAHSS Central Florida Website Change Log
 
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
