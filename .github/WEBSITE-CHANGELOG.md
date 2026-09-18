@@ -1,3 +1,14 @@
+## 2026-09-18 — Johnson Controls Gold Sponsor
+
+### Changed
+- Added Johnson Controls to the Sponsors page as a Gold Sponsor.
+- Linked the sponsor card to the official Johnson Controls website (`https://www.jci.com/`).
+- Sponsor logo/icon is sourced from the official `jci.com` domain using the Sponsors page's existing domain-logo mechanism.
+
+### Files in this update
+- `sponsors.html`
+- `.github/WEBSITE-CHANGELOG.md`
+
 
 ## 2026-09-14 — FBI/CISA Tampa Bay Healthcare Security Workshop
 
