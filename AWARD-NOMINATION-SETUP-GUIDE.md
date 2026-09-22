@@ -74,7 +74,12 @@ Suggested Git commit message:
 
 `Add online award nomination form and automated routing`
 
-Commit to `main`, then click **Push origin**. GitHub Pages will republish automatically.
+1. Copy the files into the local repository while on `develop`.
+2. Commit and **Push origin** for `develop`.
+3. Test the Cloudflare preview deployment, including a complete test submission.
+4. After successful testing, merge `develop` into `main` in GitHub Desktop.
+5. Push `main` and verify the Cloudflare production deployment.
+6. Confirm the live form at `https://www.iahss-cfc.org/award-nomination-2026.html`.
 
 ## Part 6 - Test before announcing the form
 

@@ -1,14 +1,23 @@
-## 2026-09-22 — Gold Sponsor Additions
+## 2026-09-22 — Repository Cleanup and Documentation Refresh
 
 ### Changed
-- Added XNet Inc. to the Sponsors page as a Gold Sponsor.
-- Added Premier Body Armor to the Sponsors page as a Gold Sponsor.
-- Linked each sponsor card to the sponsor-provided website.
+- Organized the Summit hotel technology / Wi-Fi / power QR asset under `assets/images/events/` and updated its page reference.
+- Updated repository and deployment documentation for the current `develop → Cloudflare preview → main → Cloudflare production` workflow.
+- Updated the award nomination setup guide to use the current deployment workflow.
+
+### Cleanup
+- Confirmed four legacy/duplicate image assets are unused and safe to delete.
+- Consolidated obsolete root upload/version documentation into the maintained README and GitHub update guide.
+- Retained `CNAME` and `.nojekyll` pending separate domain/GitHub Pages cleanup verification.
 
 ### Files in this update
-- `sponsors.html`
+- `summit-exhibitor-resources-2026.html`
+- `assets/images/events/IAHSS_Summit_2026_Hotel_Technology_QR.png`
+- `README.md`
+- `GITHUB-UPDATE-GUIDE.md`
+- `AWARD-NOMINATION-SETUP-GUIDE.md`
 - `.github/WEBSITE-CHANGELOG.md`
-
+- `.github/WEBSITE-CHANGELOG-2026-09-22-REPOSITORY-CLEANUP.md`
 
 ## 2026-09-18 — Johnson Controls Gold Sponsor
 

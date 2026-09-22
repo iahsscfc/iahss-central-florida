@@ -1,2 +1,0 @@
-IAHSS CFC Website Master v1.5.3
-Countdown reliability fix for November 2026 Summit.

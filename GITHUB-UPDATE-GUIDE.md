@@ -1,43 +1,59 @@
-# Manual GitHub Update Guide
+# GitHub Desktop + Cloudflare Update Guide
 
-Repository: `https://github.com/iahsscfc/iahss-central-florida`
+Repository: `iahsscfc/iahss-central-florida`
 
-## Replace the entire website safely
+## Normal website update
 
-1. Download and extract the master ZIP.
-2. Open the extracted `IAHSS_CFC_Website_Master` folder.
-3. In GitHub, open the repository and confirm the branch is `main`.
-4. Select **Add file → Upload files**.
-5. Drag the files and folders from inside the master folder into the upload area.
-6. Allow GitHub to replace files with the same names.
-7. Use a commit message such as `Update website from master package`.
-8. Select **Commit directly to the main branch** and commit.
-9. Open the repository's **Actions** tab and wait for the Pages deployment to show a green checkmark.
-10. Open the live website and press `Ctrl+F5` to bypass cached files.
+1. Open GitHub Desktop.
+2. Select `iahss-central-florida`.
+3. Switch to `develop`.
+4. Click **Fetch origin**.
+5. Confirm there are no unexpected local changes.
+6. Use **Repository → Show in Explorer**.
+7. Copy only the new/changed website files into the repository, preserving folder paths.
+8. Return to GitHub Desktop and review the changed files.
+9. Commit to `develop` with a concise description.
+10. Click **Push origin**.
+11. In Cloudflare Pages, open the `develop` preview deployment and test the affected pages.
+12. If testing passes, switch GitHub Desktop to `main` and click **Fetch origin**.
+13. Use **Branch → Merge into current branch…** and select `develop`.
+14. If there are no merge conflicts, push `main`.
+15. Wait for the Cloudflare production deployment to complete.
+16. Verify `https://www.iahss-cfc.org/` and hard-refresh (`Ctrl+F5`) if needed.
 
-## Update only one page
-
-Upload the replacement HTML file to the repository root. For example, upload `sponsors.html` directly beside `index.html`.
-
-## Replace a picture or logo
-
-1. Open `assets/images` in GitHub.
-2. Select **Add file → Upload files**.
-3. Upload the replacement using the exact same filename and capitalization.
-4. Commit the change.
+If GitHub Desktop reports a merge conflict, stop and resolve it before pushing production.
 
 ## Add a future event
 
-1. Copy the closest existing `event-*.html` page and rename it.
-2. Update the title, date, location, description, registration link, and calendar link.
-3. Add a matching event card to `events.html`.
-4. Add or update the featured event on `index.html` when appropriate.
-5. Add an `.ics` calendar file under `assets/calendar`.
-6. Upload and commit all related files together.
+1. Copy the closest existing `event-*.html` page and rename it appropriately.
+2. Update the title, date, location, description and official links.
+3. Add/update the event card in `events.html`.
+4. Update the featured/next event on `index.html` when appropriate.
+5. Add a matching `.ics` file under `assets/calendar/` when useful.
+6. Put event artwork under `assets/images/events/`.
+7. Commit all related files together on `develop`, then test the Cloudflare preview.
+
+## Replace a picture or logo
+
+1. Store images under the appropriate `assets/images/` subfolder.
+2. If replacing an existing image, use the same filename when practical.
+3. If the filename/path changes, update every HTML/CSS reference before committing.
+4. Test the affected page in the Cloudflare preview before merging to `main`.
+
+## Repository housekeeping
+
+Before moving or deleting files:
+
+1. Create an external ZIP backup.
+2. Search HTML, CSS and JavaScript for references to each candidate file.
+3. Move assets into the appropriate `assets/` folder and update references in the same commit.
+4. Delete only confirmed-unused duplicates/obsolete files.
+5. Test on `develop` before merging to `main`.
 
 ## Troubleshooting
 
-- Wrong or old image: wait for the GitHub Pages deployment, then press `Ctrl+F5`.
-- Broken layout: verify each page points to `assets/css/styles.css`.
-- Menu not working: verify each page points to `assets/js/site.js`.
-- Missing image: verify the filename, extension, and capitalization exactly match the HTML.
+- Old content after deployment: wait for Cloudflare deployment, then use `Ctrl+F5`.
+- Broken layout: verify the page points to `assets/css/styles.css`.
+- Menu not working: verify the page points to `assets/js/site.js`.
+- Missing image: verify path, filename, extension and capitalization.
+- Production did not update: confirm the latest `main` commit has a successful Cloudflare deployment.
