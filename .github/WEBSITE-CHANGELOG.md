@@ -1,3 +1,15 @@
+## 2026-09-22 — Gold Sponsor Additions
+
+### Changed
+- Added XNet Inc. to the Sponsors page as a Gold Sponsor.
+- Added Premier Body Armor to the Sponsors page as a Gold Sponsor.
+- Linked each sponsor card to the sponsor-provided website.
+
+### Files in this update
+- `sponsors.html`
+- `.github/WEBSITE-CHANGELOG.md`
+
+
 ## 2026-09-18 — Johnson Controls Gold Sponsor
 
 ### Changed
