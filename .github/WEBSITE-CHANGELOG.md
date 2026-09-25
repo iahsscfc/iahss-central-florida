@@ -126,3 +126,19 @@ This file is maintained for internal website record keeping. It is stored in the
 - `.github/WEBSITE-CHANGELOG.md`
 
 - Diamond sponsor card restored to its original dimensions; Motorola Solutions logo enlarged within the original card footprint.
+
+## 2026-09-25 — Healthcare Security & Safety Week Recognition
+
+### Added
+- Added a dedicated 2026 Healthcare Security & Safety Week recognition page.
+- Added homepage recognition feature for October 11–17, including the 2026 theme and October 14 Officer Appreciation Day.
+- Added HSSW recognition to the News page with links to official IAHSS resources and the October 14 national webinar.
+
+### Changed
+- Updated the homepage event order after the September 24 workshop: the Second Annual IAHSS Florida Summit is now the next chapter event and the FBI/CISA workshop is marked completed.
+
+### Files in this update
+- `index.html`
+- `news.html`
+- `healthcare-security-safety-week-2026.html`
+- `.github/WEBSITE-CHANGELOG.md`

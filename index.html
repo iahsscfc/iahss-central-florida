@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
+    .hssw-feature{margin-top:-42px;position:relative;z-index:2;background:linear-gradient(130deg,#04396c,#00254e);color:#fff;border-radius:8px;padding:42px 46px;box-shadow:var(--shadow);overflow:hidden}
+    .hssw-feature:after{content:"IAHSS";position:absolute;right:-18px;bottom:-52px;font-family:Manrope,Inter,sans-serif;font-size:9rem;font-weight:800;letter-spacing:-.06em;color:rgba(255,255,255,.045);pointer-events:none}
+    .hssw-feature-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:center}
+    .hssw-feature h2{font-family:Manrope,Inter,sans-serif;font-size:clamp(2rem,4vw,3.15rem);line-height:1.08;margin:0 0 12px}
+    .hssw-feature .theme{font-size:1.2rem;font-weight:700;color:#8fe1dc;margin:0 0 14px}
+    .hssw-feature .recognition-copy{color:#d7e5f3;max-width:760px;margin:0 0 24px}
+    .hssw-date{border-left:3px solid var(--teal2);padding-left:24px}
+    .hssw-date strong{display:block;font-family:Manrope,Inter,sans-serif;font-size:1.45rem;line-height:1.25}
+    .hssw-date span{display:block;color:#bcd2e5;margin-top:9px;font-size:.92rem}
+    @media(max-width:760px){.hssw-feature{width:calc(100% - 24px);padding:30px 24px}.hssw-feature-inner{grid-template-columns:1fr;gap:26px}.hssw-date{border-left:0;border-top:2px solid var(--teal2);padding:20px 0 0}.hssw-feature:after{font-size:6rem}}
     .chapter-gear{padding:70px 0;background:#fff;border-top:1px solid #dfe7ee}
     .chapter-gear-card{max-width:900px;margin:0 auto;display:grid;grid-template-columns:minmax(220px,330px) 1fr;gap:42px;align-items:center;background:linear-gradient(135deg,#f7fafc,#eef7f8);border:1px solid #dce8eb;border-radius:10px;padding:36px 42px;box-shadow:0 12px 35px rgba(5,45,92,.08)}
     .chapter-gear-image{background:#fff;border-radius:8px;padding:14px;border:1px solid #e3eaef}
@@ -42,14 +52,19 @@
         <div class="button-row"><a class="button" href="events.html">View upcoming events</a><a class="button button-light" href="https://www.iahss.org/page/membership" target="_blank" rel="noopener">Become a member</a></div>
       </div>
     </section>
-    <section class="event-feature container reveal" id="events">
-      <div class="event-photo"><img src="assets/images/events/september-2026/fbi-cisa-healthcare-security-workshop.png" alt="FBI and CISA Tampa Bay Regional Healthcare Security Workshop"></div>
-      <div class="event-copy">
-        <p class="eyebrow">Next regional event</p>
-        <h2>FBI/CISA Tampa Bay Region Healthcare Security Workshop</h2>
-        <div class="event-meta"><span>September 24, 2026</span><span>Tampa, Florida</span></div>
-        <p>Healthcare security, law enforcement, emergency management and public safety partners will address emerging threats, share best practices and strengthen healthcare resilience.</p>
-        <a class="button" href="event-fbi-cisa-workshop-2026.html">Workshop details &amp; registration</a>
+    <section class="hssw-feature container reveal" aria-labelledby="hssw-title">
+      <div class="hssw-feature-inner">
+        <div>
+          <p class="eyebrow light">Professional recognition</p>
+          <h2 id="hssw-title">Healthcare Security &amp; Safety Week</h2>
+          <p class="theme">“Securing the Mission of Quality Care”</p>
+          <p class="recognition-copy">October 11–17, 2026, we proudly recognize the healthcare security and safety professionals who help protect patients, visitors, caregivers and healthcare organizations throughout Central Florida and beyond.</p>
+          <a class="button" href="healthcare-security-safety-week-2026.html">Learn more &amp; recognize the week</a>
+        </div>
+        <div class="hssw-date">
+          <strong>October 11–17, 2026</strong>
+          <span>Healthcare Security &amp; Safety Officer Appreciation Day<br><b>Wednesday, October 14</b></span>
+        </div>
       </div>
     </section>
     <section class="events-list container section-pad" aria-labelledby="events-title">
@@ -59,13 +74,13 @@
         <p>Upcoming and completed 2026 chapter events. Select an event for full details, registration or meeting recap.</p>
       </div>
       <div class="event-grid">
-        <a class="event-card featured reveal" href="event-fbi-cisa-workshop-2026.html">
-          <div class="event-date"><strong>24</strong><span>Sep</span></div>
-          <div><span class="event-status">Next regional event</span><h3>FBI/CISA Tampa Bay Region Healthcare Security Workshop</h3><p>Regional workshop for healthcare security, law enforcement, emergency management and public safety partners.</p><b>8:00 AM–4:00 PM · Tampa General Hospital / USF PDI</b></div>
-        </a>
-        <a class="event-card reveal" href="event-fall-summit-2026.html">
+        <a class="event-card featured reveal" href="event-fall-summit-2026.html">
           <div class="event-date"><strong>12</strong><span>Nov</span></div>
-          <div><span class="event-status">Upcoming</span><h3>Second Annual IAHSS Florida Summit</h3><p>Registration, agenda, hotel and exhibitor information are now available in the Summit Hub.</p><b>7:00 AM–4:00 PM · Embassy Suites Tampa Downtown</b></div>
+          <div><span class="event-status">Next chapter event</span><h3>Second Annual IAHSS Florida Summit</h3><p>Registration, agenda, hotel and exhibitor information are now available in the Summit Hub.</p><b>7:00 AM–4:00 PM · Embassy Suites Tampa Downtown</b></div>
+        </a>
+        <a class="event-card reveal" href="event-fbi-cisa-workshop-2026.html">
+          <div class="event-date"><strong>24</strong><span>Sep</span></div>
+          <div><span class="event-status past">Completed</span><h3>FBI/CISA Tampa Bay Region Healthcare Security Workshop</h3><p>Regional workshop for healthcare security, law enforcement, emergency management and public safety partners.</p><b>8:00 AM–4:00 PM · Tampa General Hospital / USF PDI</b></div>
         </a>
         <a class="event-card reveal" href="event-holiday-2026.html">
           <div class="event-date"><strong>04</strong><span>Dec</span></div>
