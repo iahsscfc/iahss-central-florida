@@ -142,3 +142,13 @@ This file is maintained for internal website record keeping. It is stored in the
 - `news.html`
 - `healthcare-security-safety-week-2026.html`
 - `.github/WEBSITE-CHANGELOG.md`
+
+## 2026-09-25 — September Workshop Event Status
+
+### Changed
+- Moved the September 24 FBI/CISA Tampa Bay Region Healthcare Security Workshop from Upcoming Meetings & Events to Completed Meetings on the Events page.
+- Updated its status from “Next regional event” to “Completed.”
+
+### Files in this update
+- `events.html`
+- `.github/WEBSITE-CHANGELOG.md`
