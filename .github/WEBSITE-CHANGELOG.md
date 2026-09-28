@@ -52,6 +52,18 @@
 
 # IAHSS Central Florida Website Change Log
 
+
+## 2026-09-28 — Add Alert Enterprise and Iron Temple Training Center Sponsors
+
+### Added
+- Added Alert Enterprise to the Platinum Sponsor tier ($3,000 level).
+- Added Iron Temple Training Center (Safe State Solutions) to the Gold Sponsor tier ($1,500 level).
+- Sponsor cards link to each organization's official website.
+
+### Files in this update
+- `sponsors.html`
+- `.github/WEBSITE-CHANGELOG.md`
+
 This file is maintained for internal website record keeping. It is stored in the repository metadata area and is not linked from the public website.
 
 ## 2026-08-31 — Add CriticalArc as Silver Sponsor + Motorola Logo Asset
@@ -126,29 +138,3 @@ This file is maintained for internal website record keeping. It is stored in the
 - `.github/WEBSITE-CHANGELOG.md`
 
 - Diamond sponsor card restored to its original dimensions; Motorola Solutions logo enlarged within the original card footprint.
-
-## 2026-09-25 — Healthcare Security & Safety Week Recognition
-
-### Added
-- Added a dedicated 2026 Healthcare Security & Safety Week recognition page.
-- Added homepage recognition feature for October 11–17, including the 2026 theme and October 14 Officer Appreciation Day.
-- Added HSSW recognition to the News page with links to official IAHSS resources and the October 14 national webinar.
-
-### Changed
-- Updated the homepage event order after the September 24 workshop: the Second Annual IAHSS Florida Summit is now the next chapter event and the FBI/CISA workshop is marked completed.
-
-### Files in this update
-- `index.html`
-- `news.html`
-- `healthcare-security-safety-week-2026.html`
-- `.github/WEBSITE-CHANGELOG.md`
-
-## 2026-09-25 — September Workshop Event Status
-
-### Changed
-- Moved the September 24 FBI/CISA Tampa Bay Region Healthcare Security Workshop from Upcoming Meetings & Events to Completed Meetings on the Events page.
-- Updated its status from “Next regional event” to “Completed.”
-
-### Files in this update
-- `events.html`
-- `.github/WEBSITE-CHANGELOG.md`
