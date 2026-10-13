@@ -12,10 +12,10 @@ This package adds a public online nomination page while preserving the existing 
   - bbeers@tgh.org
   - info@iahss.org
   - info@iahss-cfc.org
-  - thomas.gooden@va.gov
   - jeccica.schelble@baycare.org
   - iahsscfc@gmail.com
-- Emails a PDF confirmation to the sponsoring member.
+- Emails a PDF confirmation to the person submitting the nomination.
+- The IAHSS member number is optional; nonmembers may submit nominations.
 - Keeps the original Word form available for people who prefer the traditional process.
 
 ## Part 1 - Add the Google Apps Script backend
@@ -86,7 +86,7 @@ Suggested Git commit message:
 1. Open the new page:
    `https://www.iahss-cfc.org/award-nomination-2026.html`
 2. Submit a test nomination using an email address you can check.
-3. Confirm all six review addresses receive the email.
+3. Confirm all five review addresses receive the email.
 4. Confirm the sponsoring email receives a confirmation.
 5. Sign into Google Drive as `iahsscfc@gmail.com`.
 6. Confirm a folder named `IAHSS CFC 2026 Award Nominations` exists.
@@ -99,7 +99,7 @@ Suggested Git commit message:
 
 - **All response data:** Google Sheet `IAHSS CFC Award Nominations`.
 - **Printable copies:** Google Drive folder `IAHSS CFC 2026 Award Nominations`.
-- **Email copies:** Sent automatically to the six review addresses.
+- **Email copies:** Sent automatically to the five review addresses.
 - **Traditional option:** Existing Word form remains downloadable from the website.
 
 ## Important operating notes
