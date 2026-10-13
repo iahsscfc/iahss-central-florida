@@ -6,7 +6,6 @@ const CONFIG = {
     'bbeers@tgh.org',
     'info@iahss.org',
     'info@iahss-cfc.org',
-    'thomas.gooden@va.gov',
     'jeccica.schelble@baycare.org',
     'iahsscfc@gmail.com'
   ],
@@ -72,7 +71,7 @@ function normalizeSubmission_(single, multi) {
 }
 
 function validateSubmission_(data) {
-  const required = ['awardCategory', 'nomineeName', 'nomineeTitle', 'nomineeOrganization', 'sponsorName', 'sponsorMemberId', 'sponsorEmail', 'submissionDate', 'attestation', 'narrative'];
+  const required = ['awardCategory', 'nomineeName', 'nomineeTitle', 'nomineeOrganization', 'sponsorName', 'sponsorEmail', 'submissionDate', 'attestation', 'narrative'];
   required.forEach((field) => {
     if (!String(data[field] || '').trim()) throw new Error(`Missing required field: ${field}`);
   });
