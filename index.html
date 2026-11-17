@@ -59,25 +59,29 @@
         <p>Upcoming and completed 2026 chapter events. Select an event for full details, registration or meeting recap.</p>
       </div>
       <div class="event-grid">
-        <a class="event-card reveal" href="event-holiday-2026.html">
+        <a class="event-card reveal" href="event-holiday-2026.html" data-event-date="2026-12-04">
           <div class="event-date"><strong>04</strong><span>Dec</span></div>
           <div><span class="event-status">Save the date</span><h3>18th Annual Chapter Holiday Party & Luncheon</h3><p>Annual chapter celebration and luncheon at the Columbia Restaurant.</p><b>11:30 AM–2:00 PM · Ybor City, Tampa</b></div>
         </a>
-        <a class="event-card reveal" href="event-fall-summit-2026.html">
+        <a class="event-card reveal" href="event-fall-summit-2026.html" data-event-date="2026-11-12">
           <div class="event-date"><strong>12</strong><span>Nov</span></div>
           <div><span class="event-status past">Completed</span><h3>Second Annual IAHSS Florida Summit</h3><p>Review the completed Summit and its event resources.</p><b>7:00 AM–4:00 PM · Embassy Suites Tampa Downtown</b></div>
         </a>
-        <a class="event-card reveal" href="event-fbi-cisa-workshop-2026.html">
+        <a class="event-card reveal" href="event-fbi-cisa-workshop-2026.html" data-event-date="2026-09-24">
           <div class="event-date"><strong>24</strong><span>Sep</span></div>
           <div><span class="event-status past">Completed</span><h3>FBI/CISA Tampa Bay Region Healthcare Security Workshop</h3><p>Regional workshop for healthcare security, law enforcement, emergency management and public safety partners.</p><b>8:00 AM–4:00 PM · Tampa General Hospital / USF PDI</b></div>
         </a>
-        <a class="event-card reveal" href="event-august-2026.html">
+        <a class="event-card reveal" href="event-august-2026.html" data-event-date="2026-08-18">
           <div class="event-date"><strong>18</strong><span>Aug</span></div>
           <div><span class="event-status past">Completed</span><h3>August Chapter Meeting Featuring Axon MetaCoach</h3><p>AI-powered immersive training for communication and operational readiness. Photos and recap available.</p><b>11:30 AM–1:00 PM · Brandon Regional Hospital</b></div>
         </a>
-        <a class="event-card reveal" href="event-june-2026.html">
+        <a class="event-card reveal" href="event-june-2026.html" data-event-date="2026-06-11">
           <div class="event-date"><strong>11</strong><span>Jun</span></div>
           <div><span class="event-status past">Completed</span><h3>Quarterly Meeting: Emergency Management Program Assessment</h3><p>Virtual webinar with Gloria Graham, CPP, CHPA.</p><b>11:30 AM–1:00 PM · Microsoft Teams</b></div>
+        </a>
+        <a class="event-card reveal" href="event-ace-2027.html" data-event-date="2027-06-07">
+          <div class="event-date"><strong>07</strong><span>Jun</span></div>
+          <div><span class="event-status">Save the date</span><h3>59th IAHSS Annual Conference &amp; Exhibition</h3><p>National IAHSS returns to Tampa for three days of education, networking and industry connection.</p><b>June 7–9, 2027 · JW Marriott Tampa Water Street</b></div>
         </a>
       </div>
     </section>
@@ -136,6 +140,28 @@
     </section>
   </main>
   <footer class="site-footer"><div class="container footer-grid"><div><img src="assets/images/iahss-cfc-logo.png" alt="IAHSS Central Florida Chapter"><p>International Association for Healthcare Security and Safety<br>Central Florida Chapter</p></div><div><h3>Contact</h3><a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a><a href="tel:+19415311073">(941) 531-1073</a><span>West Central Florida</span></div><div><h3>Quick links</h3><a href="events.html">Events</a><a href="index.html#awards">Awards</a><a href="#resources">Resources</a><a href="#leadership">Leadership</a></div><div><h3>National IAHSS</h3><p>Visit the International Association for Healthcare Security & Safety.</p><a class="footer-button" href="https://www.iahss.org" target="_blank" rel="noopener">IAHSS.org</a></div></div><div class="container copyright">© 2026 IAHSS Central Florida Chapter. All rights reserved.</div></footer>
+  <script>
+  (function () {
+    const grid = document.querySelector('.events-list .event-grid');
+    if (!grid) return;
+    const today = new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York', year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+    const cards = Array.from(grid.querySelectorAll('.event-card[data-event-date]'));
+    cards.forEach(card => {
+      const past = card.dataset.eventDate < today;
+      const status = card.querySelector('.event-status');
+      if (status) {
+        status.classList.toggle('past', past);
+        status.textContent = past ? 'Completed' : (card.dataset.eventDate === today ? 'Today' : 'Upcoming');
+      }
+    });
+    cards.sort((a,b) => {
+      const ap = a.dataset.eventDate < today, bp = b.dataset.eventDate < today;
+      if (ap !== bp) return ap ? 1 : -1;
+      return ap ? b.dataset.eventDate.localeCompare(a.dataset.eventDate) : a.dataset.eventDate.localeCompare(b.dataset.eventDate);
+    });
+    cards.forEach(card => grid.appendChild(card));
+  })();
+  </script>
   <script src="assets/js/site.js"></script>
 </body>
 </html>
