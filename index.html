@@ -54,9 +54,9 @@
     </section>
     <section class="events-list container section-pad" aria-labelledby="events-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">2026 calendar</p>
+        <p class="eyebrow">2026–2027 calendar</p>
         <h2 id="events-title">Chapter Meetings & Events</h2>
-        <p>Upcoming and completed 2026 chapter events. Select an event for full details, registration or meeting recap.</p>
+        <p>Upcoming and completed chapter events. Select an event for full details, registration or meeting recap.</p>
       </div>
       <div class="event-grid">
         <a class="event-card reveal" href="event-holiday-2026.html" data-event-date="2026-12-04">
@@ -83,6 +83,10 @@
           <div class="event-date"><strong>07</strong><span>Jun</span></div>
           <div><span class="event-status">Save the date</span><h3>59th IAHSS Annual Conference &amp; Exhibition</h3><p>National IAHSS returns to Tampa for three days of education, networking and industry connection.</p><b>June 7–9, 2027 · JW Marriott Tampa Water Street</b></div>
         </a>
+      <a class="event-card reveal" href="event-holiday-2027.html" data-event-date="2027-12">
+        <div class="event-date"><strong>TBD</strong><span>Dec</span></div>
+        <div><span class="event-status">Date TBD · 2027</span><h3>19th Annual Chapter Holiday Party &amp; Luncheon</h3><p>Annual celebration and awards program. Nomination details will be announced.</p><b>December 2027 · Date and location TBD</b></div>
+      </a>
       </div>
     </section>
     <section class="pillars container section-pad" aria-label="Chapter priorities">
@@ -149,7 +153,7 @@
     cards.forEach(card => {
       const past = card.dataset.eventDate < today;
       const status = card.querySelector('.event-status');
-      if (status) {
+      if (status && card.dataset.eventDate.length === 10) {
         status.classList.toggle('past', past);
         status.textContent = past ? 'Completed' : (card.dataset.eventDate === today ? 'Today' : 'Upcoming');
       }
