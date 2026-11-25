@@ -20,6 +20,12 @@
     .hssw-date strong{display:block;font-family:Manrope,Inter,sans-serif;font-size:1.45rem;line-height:1.25}
     .hssw-date span{display:block;color:#bcd2e5;margin-top:9px;font-size:.92rem}
     @media(max-width:760px){.hssw-feature{width:calc(100% - 24px);padding:30px 24px}.hssw-feature-inner{grid-template-columns:1fr;gap:26px}.hssw-date{border-left:0;border-top:2px solid var(--teal2);padding:20px 0 0}.hssw-feature:after{font-size:6rem}}
+    .summit-sponsor-thanks{margin:24px auto 0;max-width:1180px}
+    .summit-sponsor-thanks-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:22px 28px;background:#f1f7fa;border:1px solid #dce8eb;border-left:4px solid #0a7b83;border-radius:8px}
+    .summit-sponsor-thanks .eyebrow{margin:0 0 5px}
+    .summit-sponsor-thanks p:not(.eyebrow){margin:0;color:#526276}
+    .summit-sponsor-thanks .button{flex:0 0 auto}
+    @media(max-width:760px){.summit-sponsor-thanks{width:calc(100% - 32px)}.summit-sponsor-thanks-inner{align-items:flex-start;flex-direction:column;padding:20px}.summit-sponsor-thanks .button{align-self:flex-start}}
     .chapter-gear{padding:70px 0;background:#fff;border-top:1px solid #dfe7ee}
     .chapter-gear-card{max-width:900px;margin:0 auto;display:grid;grid-template-columns:minmax(220px,330px) 1fr;gap:42px;align-items:center;background:linear-gradient(135deg,#f7fafc,#eef7f8);border:1px solid #dce8eb;border-radius:10px;padding:36px 42px;box-shadow:0 12px 35px rgba(5,45,92,.08)}
     .chapter-gear-image{background:#fff;border-radius:8px;padding:14px;border:1px solid #e3eaef}
@@ -52,6 +58,15 @@
         <div class="button-row"><a class="button" href="events.html">View upcoming events</a><a class="button button-light" href="https://www.iahss.org/page/membership" target="_blank" rel="noopener">Become a member</a></div>
       </div>
     </section>
+    <section class="summit-sponsor-thanks container" aria-label="Fall Summit sponsor thank-you" data-display-start="2026-11-25">
+      <div class="summit-sponsor-thanks-inner">
+        <div>
+          <p class="eyebrow">Fall Summit Sponsors</p>
+          <p>Thank you to our sponsors for helping make the Fall Summit a success. Strong turnout and events like this are possible because of your support. Please visit our sponsors' websites and learn more about their work.</p>
+        </div>
+        <a class="button button-outline" href="sponsors.html">Meet our sponsors →</a>
+      </div>
+    </section>
     <section class="events-list container section-pad" aria-labelledby="events-title">
       <div class="section-heading reveal">
         <p class="eyebrow">2026–2027 calendar</p>
@@ -67,11 +82,6 @@
           <div class="event-date"><strong>12</strong><span>Nov</span></div>
           <div><span class="event-status past">Completed</span><h3>Second Annual IAHSS Florida Summit</h3><p>Review the completed Summit and its event resources.</p><b>7:00 AM–4:00 PM · Embassy Suites Tampa Downtown</b></div>
         </a>
-        <div class="summit-sponsor-thanks reveal">
-          <p class="eyebrow">Fall Summit Sponsors</p>
-          <p>Thank you to our sponsors for helping make the Fall Summit a success. Strong turnout and meaningful events like this are possible because of your support. Please visit our sponsors' websites and learn more about their work.</p>
-          <a class="text-link" href="sponsors.html">Meet our sponsors and visit their sites →</a>
-        </div>
         <a class="event-card reveal" href="event-fbi-cisa-workshop-2026.html" data-event-date="2026-09-24">
           <div class="event-date"><strong>24</strong><span>Sep</span></div>
           <div><span class="event-status past">Completed</span><h3>FBI/CISA Tampa Bay Region Healthcare Security Workshop</h3><p>Regional workshop for healthcare security, law enforcement, emergency management and public safety partners.</p><b>8:00 AM–4:00 PM · Tampa General Hospital / USF PDI</b></div>
@@ -149,6 +159,16 @@
     </section>
   </main>
   <footer class="site-footer"><div class="container footer-grid"><div><img src="assets/images/iahss-cfc-logo.png" alt="IAHSS Central Florida Chapter"><p>International Association for Healthcare Security and Safety<br>Central Florida Chapter</p></div><div><h3>Contact</h3><a href="mailto:info@iahss-cfc.org">info@iahss-cfc.org</a><a href="tel:+19415311073">(941) 531-1073</a><span>West Central Florida</span></div><div><h3>Quick links</h3><a href="events.html">Events</a><a href="index.html#awards">Awards</a><a href="#resources">Resources</a><a href="#leadership">Leadership</a><a href="leadership-history.html">Leadership archive</a></div><div><h3>National IAHSS</h3><p>Visit the International Association for Healthcare Security & Safety.</p><a class="footer-button" href="https://www.iahss.org" target="_blank" rel="noopener">IAHSS.org</a></div></div><div class="container copyright">© 2026 IAHSS Central Florida Chapter. All rights reserved.</div></footer>
+  <script>
+  (function () {
+    const notice = document.querySelector('.summit-sponsor-thanks[data-display-start]');
+    if (notice) {
+      const start = new Date(notice.dataset.displayStart + 'T00:00:00-05:00');
+      const expires = new Date(start.getTime() + 20 * 24 * 60 * 60 * 1000);
+      if (Date.now() >= expires.getTime()) notice.remove();
+    }
+  })();
+  </script>
   <script>
   (function () {
     const grid = document.querySelector('.events-list .event-grid');
